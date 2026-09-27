@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Cars | CarForSale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+
+<header class="navbar glass">
+ <a href="./index.html" class="logo">
+                <span class="logo-icon">C</span>
+                <span>Car<span>ForSale</span></span>
+            </a>
+  <nav class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="buy.html" class="active">Buy Cars</a>
+    <a href="sell.html">Sell Car</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="./pages/sell.html" class="nav-button">
+                Sell Your Car
+                <span>↗</span>
+            </a>
+
+  
+</header>
+
+
+<main>
+
+  <section class="inner-hero">
+    <span class="section-badge">🚗 Explore Our Cars</span>
+    <h1>Find a Car You'll <span>Love to Drive.</span></h1>
+    <p>Browse quality pre-owned cars from trusted sellers and find the right car for your lifestyle and budget.</p>
+  </section>
+
+
+  <section class="filter-panel glass">
+
+    <div class="filter-heading">
+      <div>
+        <h2>Find Your Car</h2>
+        <p>Use the filters to narrow down your search.</p>
+      </div>
+    </div>
+
+    <div class="filters-grid">
+
+      <div class="filter-field">
+        <label>Location</label>
+        <select>
+          <option>All Locations</option>
+          <option>Bengaluru</option>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+          <option>Pune</option>
+          <option>Hyderabad</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label>Brand</label>
+        <select>
+          <option>All Brands</option>
+          <option>Hyundai</option>
+          <option>Honda</option>
+          <option>Maruti Suzuki</option>
+          <option>Tata</option>
+          <option>Volkswagen</option>
+          <option>Toyota</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label>Budget</label>
+        <select>
+          <option>Any Budget</option>
+          <option>Under ₹5 Lakh</option>
+          <option>₹5 - ₹8 Lakh</option>
+          <option>₹8 - ₹12 Lakh</option>
+          <option>₹12 - ₹20 Lakh</option>
+          <option>Above ₹20 Lakh</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label>Fuel Type</label>
+        <select>
+          <option>All Fuel Types</option>
+          <option>Petrol</option>
+          <option>Diesel</option>
+          <option>CNG</option>
+          <option>Electric</option>
+          <option>Hybrid</option>
+        </select>
+      </div>
+
+    </div>
+
+    <button class="btn btn-primary filter-button" onclick="filterCars()">
+      🔍 Search Cars
+    </button>
+
+  </section>
+
+
+  <section class="listing-section">
+
+    <div class="listing-header">
+      <div>
+        <span class="section-badge">Featured Listings</span>
+        <h2>Cars Available</h2>
+      </div>
+
+      <select class="sort-select">
+        <option>Sort: Recommended</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Newest First</option>
+      </select>
+    </div>
+
+
+    <div class="car-grid">
+
+      <article class="car-card glass">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=85" alt="Hyundai Creta">
+          <span class="car-tag">Featured</span>
+          <button class="heart-btn">♡</button>
+        </div>
+
+        <div class="car-info">
+          <div class="car-title-row">
+            <h3>Hyundai Creta</h3>
+            <span>2022</span>
+          </div>
+
+          <p class="car-price">₹12.25 Lakh</p>
+
+          <div class="car-specs">
+            <span>⛽ Petrol</span>
+            <span>⚙ Automatic</span>
+            <span>📍 Bengaluru</span>
+          </div>
+
+          <button class="btn btn-outline full-btn">View Details</button>
+        </div>
+      </article>
+
+
+      <article class="car-card glass">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1000&q=85" alt="Honda City">
+          <span class="car-tag">Popular</span>
+          <button class="heart-btn">♡</button>
+        </div>
+
+        <div class="car-info">
+          <div class="car-title-row">
+            <h3>Honda City</h3>
+            <span>2021</span>
+          </div>
+
+          <p class="car-price">₹9.80 Lakh</p>
+
+          <div class="car-specs">
+            <span>⛽ Petrol</span>
+            <span>⚙ Manual</span>
+            <span>📍 Mumbai</span>
+          </div>
+
+          <button class="btn btn-outline full-btn">View Details</button>
+        </div>
+      </article>
+
+
+      <article class="car-card glass">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1000&q=85" alt="Volkswagen Polo">
+          <button class="heart-btn">♡</button>
+        </div>
+
+        <div class="car-info">
+          <div class="car-title-row">
+            <h3>Volkswagen Polo</h3>
+            <span>2020</span>
+          </div>
+
+          <p class="car-price">₹7.25 Lakh</p>
+
+          <div class="car-specs">
+            <span>⛽ Petrol</span>
+            <span>⚙ Manual</span>
+            <span>📍 Pune</span>
+          </div>
+
+          <button class="btn btn-outline full-btn">View Details</button>
+        </div>
+      </article>
+
+
+      <article class="car-card glass">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1000&q=85" alt="Toyota Fortuner">
+          <button class="heart-btn">♡</button>
+        </div>
+
+        <div class="car-info">
+          <div class="car-title-row">
+            <h3>Toyota Fortuner</h3>
+            <span>2021</span>
+          </div>
+
+          <p class="car-price">₹31.50 Lakh</p>
+
+          <div class="car-specs">
+            <span>⛽ Diesel</span>
+            <span>⚙ Automatic</span>
+            <span>📍 Delhi</span>
+          </div>
+
+          <button class="btn btn-outline full-btn">View Details</button>
+        </div>
+      </article>
+
+
+      <article class="car-card glass">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1000&q=85" alt="Tata Nexon">
+          <button class="heart-btn">♡</button>
+        </div>
+
+        <div class="car-info">
+          <div class="car-title-row">
+            <h3>Tata Nexon</h3>
+            <span>2023</span>
+          </div>
+
+          <p class="car-price">₹10.40 Lakh</p>
+
+          <div class="car-specs">
+            <span>⛽ Petrol</span>
+            <span>⚙ Manual</span>
+            <span>📍 Hyderabad</span>
+          </div>
+
+          <button class="btn btn-outline full-btn">View Details</button>
+        </div>
+      </article>
+
+
+      <article class="car-card glass">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1000&q=85" alt="Maruti Suzuki">
+          <button class="heart-btn">♡</button>
+        </div>
+
+        <div class="car-info">
+          <div class="car-title-row">
+            <h3>Maruti Suzuki Brezza</h3>
+            <span>2022</span>
+          </div>
+
+          <p class="car-price">₹8.90 Lakh</p>
+
+          <div class="car-specs">
+            <span>⛽ Petrol</span>
+            <span>⚙ Automatic</span>
+            <span>📍 Bengaluru</span>
+          </div>
+
+          <button class="btn btn-outline full-btn">View Details</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="./index.html" class="logo">
+                    <span class="logo-icon">C</span>
+                    <span>Car<span>ForSale</span></span>
+                </a>
+      <p>Better Cars. Better Deals. Better Journeys.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="buy.html">Buy Cars</a>
+      <a href="sell.html">Sell Car</a>
+      <a href="exchange.html">Exchange</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 CarForSale. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

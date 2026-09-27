@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Car | CarForSale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+
+<header class="navbar glass">
+    <a href="./index.html" class="logo">
+                <span class="logo-icon">C</span>
+                <span>Car<span>ForSale</span></span>
+            </a>
+
+  <nav class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="buy.html">Buy Cars</a>
+    <a href="sell.html" class="active">Sell Car</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+   <a href="./pages/sell.html" class="nav-button">
+                Sell Your Car
+                <span>↗</span>
+            </a>
+  
+</header>
+
+
+<main>
+
+<section class="inner-hero">
+  <span class="section-badge">💰 Sell With Confidence</span>
+  <h1>Sell Your Car <span>the Smarter Way.</span></h1>
+  <p>Reach genuine buyers, showcase your car and get a great deal without complicated processes.</p>
+</section>
+
+
+<section class="sell-layout">
+
+  <div class="sell-benefits">
+
+    <div class="glass sell-benefit">
+      <div class="benefit-icon">📢</div>
+      <div>
+        <h3>Reach More Buyers</h3>
+        <p>Showcase your vehicle to people actively looking for their next car.</p>
+      </div>
+    </div>
+
+    <div class="glass sell-benefit">
+      <div class="benefit-icon">💎</div>
+      <div>
+        <h3>Showcase Your Car</h3>
+        <p>Add your car details, specifications and asking price.</p>
+      </div>
+    </div>
+
+    <div class="glass sell-benefit">
+      <div class="benefit-icon">🤝</div>
+      <div>
+        <h3>Connect With Buyers</h3>
+        <p>Interested buyers can contact you directly about your listing.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="glass sell-form-card">
+
+    <h2>List Your Car</h2>
+    <p class="form-subtitle">Enter your car details below.</p>
+
+    <form onsubmit="submitSellForm(event)">
+
+      <div class="form-grid">
+
+        <div class="form-field">
+          <label>Car Brand</label>
+          <select required>
+            <option value="">Select Brand</option>
+            <option>Maruti Suzuki</option>
+            <option>Hyundai</option>
+            <option>Honda</option>
+            <option>Tata</option>
+            <option>Toyota</option>
+            <option>Volkswagen</option>
+            <option>Kia</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>Car Model</label>
+          <input type="text" placeholder="e.g. Creta" required>
+        </div>
+
+        <div class="form-field">
+          <label>Manufacturing Year</label>
+          <select required>
+            <option value="">Select Year</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>Fuel Type</label>
+          <select required>
+            <option value="">Select Fuel</option>
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>CNG</option>
+            <option>Electric</option>
+            <option>Hybrid</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>Transmission</label>
+          <select required>
+            <option value="">Select Transmission</option>
+            <option>Manual</option>
+            <option>Automatic</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label>Kilometres Driven</label>
+          <input type="number" placeholder="e.g. 45000" required>
+        </div>
+
+        <div class="form-field">
+          <label>Expected Price</label>
+          <input type="text" placeholder="e.g. ₹8,50,000" required>
+        </div>
+
+        <div class="form-field">
+          <label>City</label>
+          <input type="text" placeholder="e.g. Bengaluru" required>
+        </div>
+
+      </div>
+
+      <div class="form-field">
+        <label>Additional Information</label>
+        <textarea rows="4" placeholder="Tell buyers something about your car..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary full-btn">
+        Submit Car Details
+      </button>
+
+      <p class="form-note">This is a frontend demo. Your information is not stored in a database.</p>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+     <a href="./index.html" class="logo">
+                    <span class="logo-icon">C</span>
+                    <span>Car<span>ForSale</span></span>
+                </a>
+      <p>Better Cars. Better Deals. Better Journeys.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="buy.html">Buy Cars</a>
+      <a href="sell.html">Sell Car</a>
+      <a href="exchange.html">Exchange</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 CarForSale. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

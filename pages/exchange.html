@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Cars | CarForSale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+
+<header class="navbar glass">
+ <a href="./index.html" class="logo">
+                <span class="logo-icon">C</span>
+                <span>Car<span>ForSale</span></span>
+            </a>
+  <nav class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="buy.html">Buy Cars</a>
+    <a href="sell.html">Sell Car</a>
+    <a href="exchange.html" class="active">Exchange</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="./pages/sell.html" class="nav-button">
+                Sell Your Car
+                <span>↗</span>
+            </a>
+</header>
+
+
+<main>
+
+<section class="inner-hero">
+  <span class="section-badge">🔄 Easy Car Exchange</span>
+  <h1>Upgrade Your Car <span>With an Exchange.</span></h1>
+  <p>Trade your current car for another vehicle that better matches your needs, lifestyle and budget.</p>
+</section>
+
+
+<section class="exchange-layout">
+
+  <div class="glass exchange-card">
+
+    <div class="exchange-icon">🚗</div>
+
+    <h2>Your Current Car</h2>
+    <p>Tell us about the car you want to exchange.</p>
+
+    <form onsubmit="submitExchangeForm(event)">
+
+      <div class="form-field">
+        <label>Current Car Brand</label>
+        <select required>
+          <option value="">Select Brand</option>
+          <option>Maruti Suzuki</option>
+          <option>Hyundai</option>
+          <option>Honda</option>
+          <option>Tata</option>
+          <option>Toyota</option>
+          <option>Volkswagen</option>
+          <option>Kia</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label>Current Car Model</label>
+        <input type="text" placeholder="e.g. Honda City" required>
+      </div>
+
+      <div class="form-field">
+        <label>Model Year</label>
+        <input type="number" placeholder="e.g. 2021" required>
+      </div>
+
+      <div class="form-field">
+        <label>Approx. Kilometres</label>
+        <input type="number" placeholder="e.g. 40000" required>
+      </div>
+
+    </form>
+
+  </div>
+
+
+  <div class="exchange-arrow">
+    ⇄
+  </div>
+
+
+  <div class="glass exchange-card">
+
+    <div class="exchange-icon">✨</div>
+
+    <h2>New Car</h2>
+    <p>Tell us what you'd like to exchange it for.</p>
+
+    <div class="form-field">
+      <label>Preferred Brand</label>
+      <select>
+        <option>Any Brand</option>
+        <option>Hyundai</option>
+        <option>Honda</option>
+        <option>Tata</option>
+        <option>Toyota</option>
+        <option>Kia</option>
+        <option>Volkswagen</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label>Preferred Model</label>
+      <input type="text" placeholder="e.g. Hyundai Creta">
+    </div>
+
+    <div class="form-field">
+      <label>Budget</label>
+      <select>
+        <option>₹5 - ₹10 Lakh</option>
+        <option>₹10 - ₹15 Lakh</option>
+        <option>₹15 - ₹20 Lakh</option>
+        <option>₹20 Lakh+</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label>City</label>
+      <input type="text" placeholder="e.g. Bengaluru">
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="exchange-submit">
+  <button class="btn btn-primary large-btn" onclick="showExchangeMessage()">
+    🔄 Find Exchange Options
+  </button>
+  <p>We'll show suitable exchange options based on your requirements.</p>
+</section>
+
+
+<section class="steps-section">
+
+  <div class="section-heading">
+    <span class="section-badge">Simple Process</span>
+    <h2>How Exchange Works</h2>
+  </div>
+
+  <div class="steps-grid">
+
+    <div class="glass step-card">
+      <span>01</span>
+      <h3>Tell Us About Your Car</h3>
+      <p>Enter basic information about your current vehicle.</p>
+    </div>
+
+    <div class="glass step-card">
+      <span>02</span>
+      <h3>Choose Your Next Car</h3>
+      <p>Tell us what type of car you would like to get.</p>
+    </div>
+
+    <div class="glass step-card">
+      <span>03</span>
+      <h3>Compare & Exchange</h3>
+      <p>Compare options and choose the exchange that suits you.</p>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="./index.html" class="logo">
+                    <span class="logo-icon">C</span>
+                    <span>Car<span>ForSale</span></span>
+                </a>
+      <p>Better Cars. Better Deals. Better Journeys.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="buy.html">Buy Cars</a>
+      <a href="sell.html">Sell Car</a>
+      <a href="exchange.html">Exchange</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 CarForSale. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

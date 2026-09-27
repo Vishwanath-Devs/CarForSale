@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarForSale | Buy, Sell & Exchange Cars</title>
+
+    <meta
+        name="description"
+        content="CarForSale - Buy, sell and exchange quality used cars."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-blur blur-one"></div>
+    <div class="background-blur blur-two"></div>
+    <div class="background-blur blur-three"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar-wrap">
+        <nav class="navbar glass">
+
+            <a href="./index.html" class="logo">
+                <span class="logo-icon">C</span>
+                <span>Car<span>ForSale</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./pages/buy.html">Buy Cars</a>
+                <a href="./pages/sell.html">Sell Car</a>
+                <a href="./pages/exchange.html">Exchange</a>
+                <a href="./pages/about.html">About Us</a>
+                <a href="./pages/contact.html">Contact</a>
+            </div>
+
+            <a href="./pages/sell.html" class="nav-button">
+                Sell Your Car
+                <span>↗</span>
+            </a>
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-badge glass">
+                    <span class="status-dot"></span>
+                    Trusted used car marketplace
+                </div>
+
+                <h1>
+                    Find Your
+                    <span>Perfect Car.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Buy, sell or exchange quality cars with confidence.
+                    Discover your next car with CarForSale.
+                </p>
+
+
+                <!-- Search Box -->
+
+                <div class="search-card glass">
+
+                    <div class="search-tabs">
+
+                        <button class="search-tab active" data-tab="buy">
+                            Buy a Car
+                        </button>
+
+                        <button class="search-tab" data-tab="sell">
+                            Sell a Car
+                        </button>
+
+                        <button class="search-tab" data-tab="exchange">
+                            Exchange
+                        </button>
+
+                    </div>
+
+
+                    <div class="search-fields">
+
+                        <div class="field">
+                            <label>Location</label>
+
+                            <div class="field-value">
+                                <span class="field-icon">⌖</span>
+                                Bengaluru
+                                <span class="arrow">⌄</span>
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <label>Brand</label>
+
+                            <div class="field-value">
+                                <span class="field-icon">🚘</span>
+                                All Brands
+                                <span class="arrow">⌄</span>
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <label>Budget</label>
+
+                            <div class="field-value">
+                                <span class="field-icon">₹</span>
+                                ₹3L - ₹15L
+                                <span class="arrow">⌄</span>
+                            </div>
+                        </div>
+
+
+                        <button class="search-button" id="searchButton">
+                            Search Cars
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Car -->
+
+            <div class="hero-visual">
+
+                <div class="hero-glow"></div>
+
+                <div class="hero-car-card glass">
+
+                    <div class="image-tag">
+                        <span>●</span>
+                        Featured
+                    </div>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=85"
+                        alt="Premium used car"
+                    >
+
+                    <div class="hero-car-info">
+
+                        <div>
+                            <p>2023 • Automatic • Petrol</p>
+                            <h3>Premium Sedan</h3>
+                        </div>
+
+                        <strong>₹12.8L</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUICK STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="stats glass">
+
+                <div class="stat">
+                    <strong>5,000+</strong>
+                    <span>Cars Available</span>
+                </div>
+
+                <div class="stat">
+                    <strong>2,500+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div class="stat">
+                    <strong>98%</strong>
+                    <span>Customer Satisfaction</span>
+                </div>
+
+                <div class="stat">
+                    <strong>50+</strong>
+                    <span>Car Brands</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED CARS ================= -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">EXPLORE CARS</span>
+
+                    <h2>
+                        Featured <span>Cars</span>
+                    </h2>
+
+                    <p>
+                        Explore our handpicked selection of quality used cars.
+                    </p>
+                </div>
+
+                <a href="./pages/buy.html" class="outline-button">
+                    View All Cars →
+                </a>
+
+            </div>
+
+
+            <div class="car-grid">
+
+                <!-- Car 1 -->
+
+                <article class="car-card glass">
+
+                    <div class="car-image">
+
+                        <span class="car-tag">Popular</span>
+
+                        <button class="heart">♡</button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=85"
+                            alt="Used SUV"
+                        >
+
+                    </div>
+
+                    <div class="car-info">
+
+                        <div class="car-title">
+                            <div>
+                                <span class="car-year">2022</span>
+                                <h3>Hyundai Creta</h3>
+                            </div>
+
+                            <strong>₹12.25L</strong>
+                        </div>
+
+                        <div class="car-specs">
+                            <span>32k km</span>
+                            <span>•</span>
+                            <span>Petrol</span>
+                            <span>•</span>
+                            <span>Automatic</span>
+                        </div>
+
+                        <div class="car-bottom">
+                            <span>📍 Bengaluru</span>
+
+                            <a href="./pages/buy.html">
+                                View →
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Car 2 -->
+
+                <article class="car-card glass">
+
+                    <div class="car-image">
+
+                        <span class="car-tag">Great Deal</span>
+
+                        <button class="heart">♡</button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=900&q=85"
+                            alt="Used sedan"
+                        >
+
+                    </div>
+
+                    <div class="car-info">
+
+                        <div class="car-title">
+                            <div>
+                                <span class="car-year">2023</span>
+                                <h3>Honda City</h3>
+                            </div>
+
+                            <strong>₹11.40L</strong>
+                        </div>
+
+                        <div class="car-specs">
+                            <span>18k km</span>
+                            <span>•</span>
+                            <span>Petrol</span>
+                            <span>•</span>
+                            <span>Manual</span>
+                        </div>
+
+                        <div class="car-bottom">
+                            <span>📍 Pune</span>
+
+                            <a href="./pages/buy.html">
+                                View →
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Car 3 -->
+
+                <article class="car-card glass">
+
+                    <div class="car-image">
+
+                        <span class="car-tag">Low KM</span>
+
+                        <button class="heart">♡</button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c9?auto=format&fit=crop&w=900&q=85"
+                            alt="Used hatchback"
+                        >
+
+                    </div>
+
+                    <div class="car-info">
+
+                        <div class="car-title">
+                            <div>
+                                <span class="car-year">2022</span>
+                                <h3>Volkswagen Polo</h3>
+                            </div>
+
+                            <strong>₹8.10L</strong>
+                        </div>
+
+                        <div class="car-specs">
+                            <span>21k km</span>
+                            <span>•</span>
+                            <span>Petrol</span>
+                            <span>•</span>
+                            <span>Automatic</span>
+                        </div>
+
+                        <div class="car-bottom">
+                            <span>📍 Mumbai</span>
+
+                            <a href="./pages/buy.html">
+                                View →
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY US ================= -->
+
+        <section class="section why-section">
+
+            <div class="why-content">
+
+                <span class="eyebrow">WHY CARFORSALE</span>
+
+                <h2>
+                    Buying a used car
+                    <span>should feel simple.</span>
+                </h2>
+
+                <p>
+                    We make finding, selling and exchanging your car
+                    easier with transparent information and a smooth
+                    digital experience.
+                </p>
+
+                <a href="./pages/about.html" class="primary-button">
+                    Discover More →
+                </a>
+
+            </div>
+
+
+            <div class="benefit-grid">
+
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">✓</div>
+                    <h3>Verified Cars</h3>
+                    <p>
+                        Discover quality cars with transparent information.
+                    </p>
+                </div>
+
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">₹</div>
+                    <h3>Fair Pricing</h3>
+                    <p>
+                        Understand the value before making your decision.
+                    </p>
+                </div>
+
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">↗</div>
+                    <h3>Easy Exchange</h3>
+                    <p>
+                        Upgrade your current car without the hassle.
+                    </p>
+                </div>
+
+                <div class="benefit-card glass">
+                    <div class="benefit-icon">♡</div>
+                    <h3>Customer First</h3>
+                    <p>
+                        A simple experience designed around your needs.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="section">
+
+            <div class="center-heading">
+
+                <span class="eyebrow">HOW IT WORKS</span>
+
+                <h2>
+                    Your next car,
+                    <span>made simple.</span>
+                </h2>
+
+                <p>
+                    Whether you're buying, selling or exchanging,
+                    we've kept the process simple.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step glass">
+
+                    <div class="step-number">01</div>
+
+                    <h3>Explore</h3>
+
+                    <p>
+                        Browse cars based on your budget,
+                        brand and preferences.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step glass">
+
+                    <div class="step-number">02</div>
+
+                    <h3>Choose</h3>
+
+                    <p>
+                        Compare your options and find
+                        a car that fits your needs.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step glass">
+
+                    <div class="step-number">03</div>
+
+                    <h3>Drive Away</h3>
+
+                    <p>
+                        Make your move and start your
+                        next journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SELL / EXCHANGE CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="cta glass">
+
+                <div class="cta-content">
+
+                    <span class="eyebrow">READY FOR YOUR NEXT CAR?</span>
+
+                    <h2>
+                        Sell your car.
+                        <span>Upgrade your journey.</span>
+                    </h2>
+
+                    <p>
+                        Sell your current car or exchange it for something
+                        that fits your next adventure.
+                    </p>
+
+                    <div class="cta-buttons">
+
+                        <a href="./pages/sell.html" class="primary-button">
+                            Sell My Car →
+                        </a>
+
+                        <a href="./pages/exchange.html" class="outline-button">
+                            Exchange My Car
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cta-orb"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="./index.html" class="logo">
+                    <span class="logo-icon">C</span>
+                    <span>Car<span>ForSale</span></span>
+                </a>
+
+                <p>
+                    Better cars. Better deals.
+                    Better journeys.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="./pages/buy.html">Buy Cars</a>
+                    <a href="./pages/sell.html">Sell Car</a>
+                    <a href="./pages/exchange.html">Exchange</a>
+                </div>
+
+                <div>
+                    <h4>Company</h4>
+                    <a href="./pages/about.html">About Us</a>
+                    <a href="./pages/contact.html">Contact</a>
+                </div>
+
+                <div>
+                    <h4>Follow Us</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 CarForSale. All rights reserved.
+            </span>
+
+            <span>
+                Buy • Sell • Exchange
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

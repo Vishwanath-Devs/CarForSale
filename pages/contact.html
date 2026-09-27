@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CarForSale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+
+<header class="navbar glass">
+ <a href="./index.html" class="logo">
+                <span class="logo-icon">C</span>
+                <span>Car<span>ForSale</span></span>
+            </a>
+
+  <nav class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="buy.html">Buy Cars</a>
+    <a href="sell.html">Sell Car</a>
+    <a href="exchange.html">Exchange</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+   <a href="./pages/sell.html" class="nav-button">
+                Sell Your Car
+                <span>↗</span>
+            </a>
+ 
+</header>
+
+
+<main>
+
+<section class="inner-hero">
+  <span class="section-badge">💬 Get In Touch</span>
+  <h1>We're Here to <span>Help.</span></h1>
+  <p>Have a question about buying, selling or exchanging a car? Send us a message.</p>
+</section>
+
+
+<section class="contact-layout">
+
+  <div class="contact-info">
+
+    <div class="glass contact-card">
+      <div class="contact-icon">📧</div>
+      <div>
+        <h3>Email</h3>
+        <p>hello@carforsale.com</p>
+      </div>
+    </div>
+
+    <div class="glass contact-card">
+      <div class="contact-icon">📞</div>
+      <div>
+        <h3>Phone</h3>
+        <p>+91 90000 00000</p>
+      </div>
+    </div>
+
+    <div class="glass contact-card">
+      <div class="contact-icon">📍</div>
+      <div>
+        <h3>Office</h3>
+        <p>Bengaluru, Karnataka, India</p>
+      </div>
+    </div>
+
+    <div class="glass contact-card">
+      <div class="contact-icon">⏰</div>
+      <div>
+        <h3>Working Hours</h3>
+        <p>Monday – Saturday<br>9:00 AM – 6:00 PM</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="glass contact-form-card">
+
+    <h2>Send Us a Message</h2>
+    <p class="form-subtitle">Fill in the form and we'll get back to you.</p>
+
+    <form onsubmit="submitContactForm(event)">
+
+      <div class="form-grid">
+
+        <div class="form-field">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-field">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+
+      </div>
+
+      <div class="form-field">
+        <label>Subject</label>
+        <select required>
+          <option value="">Choose a subject</option>
+          <option>Buying a Car</option>
+          <option>Selling a Car</option>
+          <option>Car Exchange</option>
+          <option>General Question</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label>Message</label>
+        <textarea rows="6" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary full-btn">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<section class="faq-section">
+
+  <div class="section-heading">
+    <span class="section-badge">FAQ</span>
+    <h2>Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-grid">
+
+    <details class="glass faq-item">
+      <summary>Can I list my car on CarForSale?</summary>
+      <p>Yes. Visit the Sell Car page and enter your vehicle details.</p>
+    </details>
+
+    <details class="glass faq-item">
+      <summary>Can I exchange my current car?</summary>
+      <p>Yes. Use our Exchange page to enter your current car and preferred replacement.</p>
+    </details>
+
+    <details class="glass faq-item">
+      <summary>Do I need an account?</summary>
+      <p>No account or login is required for this frontend demonstration.</p>
+    </details>
+
+    <details class="glass faq-item">
+      <summary>Is this a real car marketplace?</summary>
+      <p>This project is a frontend demonstration using static/mock car listings.</p>
+    </details>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+       <a href="./index.html" class="logo">
+                    <span class="logo-icon">C</span>
+                    <span>Car<span>ForSale</span></span>
+                </a>
+      <p>Better Cars. Better Deals. Better Journeys.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="buy.html">Buy Cars</a>
+      <a href="sell.html">Sell Car</a>
+      <a href="exchange.html">Exchange</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <p class="copyright">© 2026 CarForSale. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
